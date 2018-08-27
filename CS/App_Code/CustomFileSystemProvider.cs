@@ -69,7 +69,7 @@ public class CustomFileSystemProvider : PhysicalFileSystemProvider {
             var subDirectoriesCount = directoryInfo.GetDirectories("*", SearchOption.AllDirectories).Length;
             folderProperties.Metadata.Add("Size", folderSize.ToString("#,#") + " bytes");
             folderProperties.Metadata.Add("Contains", string.Format("Files: {0}, Folders: {1}", filesCount, subDirectoriesCount));
-            yield return new FileManagerFolder(this, folder, folder.Name, folder.Id, folderProperties);
+            yield return new FileManagerFolder(this, parentFolder, folder.Name, folder.Id, folderProperties);
         }
     }
 }
