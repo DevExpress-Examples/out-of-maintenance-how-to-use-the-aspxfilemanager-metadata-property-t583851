@@ -73,7 +73,7 @@ Public Class CustomFileSystemProvider
             Dim subDirectoriesCount = directoryInfo.GetDirectories("*", SearchOption.AllDirectories).Length
             folderProperties.Metadata.Add("Size", folderSize.ToString("#,#") & " bytes")
             folderProperties.Metadata.Add("Contains", String.Format("Files: {0}, Folders: {1}", filesCount, subDirectoriesCount))
-            Yield New FileManagerFolder(Me, folder, folder.Name, folder.Id, folderProperties)
+            Yield New FileManagerFolder(Me, parentFolder, folder.Name, folder.Id, folderProperties)
         Next folder
     End Function
 End Class
