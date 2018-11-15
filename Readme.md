@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomFileSystemProvider.cs](./CS/App_Code/CustomFileSystemProvider.cs) (VB: [CustomFileSystemProvider.vb](./VB/App_Code/CustomFileSystemProvider.vb))
+* [ExtensionsDisplayName.xml](./CS/Content/ExtensionsDisplayName.xml) (VB: [ExtensionsDisplayName.xml](./VB/Content/ExtensionsDisplayName.xml))
+* **[Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))**
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx](./VB/Default.aspx))
+<!-- default file list end -->
 # How to use the ASPxFileManager metadata property
 
 
